@@ -17,3 +17,8 @@ console.log("For-Of Loop Statement")
 for (frt of fruits) {
     console.log(frt) 
 }
+
+console.log("For-Of Loop Statement")
+for (frt of fruits) {
+    console.log(frt) 
+}
