@@ -47,7 +47,7 @@ function domManipluation2(){
     console.log("Button Press Hua...")
 }
 
-//Function for Basic DOM Manipulation used to Modify the Heading Tag of HTML Document and then vice-versa (Three Operations).
+//Function for Basic DOM Manipulation used to Modify the Heading Tag of HTML Document and then vice-versa (Three Operations). Revert Back Operations.
 function domManipluation3(){
     var h = document.getElementById("head1")
 
