@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Carousel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .carousel-container {
+            text-align: center;
+        }
+        img {
+            width: 500px;
+            height: 300px;
+            object-fit: cover;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .button-container {
+            margin-top: 15px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #008cba;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0 10px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #005f7f;
+        }
+    </style>
+
+    <script>
+        const images = ["image1.png", "image2.png", "image3.png", "image4.png"];
+        let currentIndex = 0;
+
+        function showImage(index) {
+            const imgElement = document.getElementById('carouselImage');
+            imgElement.src = "images\\" + images[index];
+        }
+
+        function prevImage() {
+            currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
+            showImage(currentIndex);
+        }
+
+        function nextImage() {
+            currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
+            showImage(currentIndex);
+        }
+    </script>
+
+</head>
+<body>
+    <div class="carousel-container">
+        <img id="carouselImage" src="images\\image5.png" alt="Carousel Image">
+        <div class="button-container">
+            <button onclick="prevImage()">Previous</button>
+            <button onclick="nextImage()">Next</button>
+        </div>
+    </div>
+
+   
+</body>
+</html>

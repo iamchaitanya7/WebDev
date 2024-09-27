@@ -1,0 +1,56 @@
+# HTML Notes
+================
+
+## 19-09-2024 Thursday
+------------------------
+
+### HTML Basics
+
+* HTML is used to display data on web page.
+* HTML is tag based language.
+
+## 20-09-2024 Friday
+----------------------
+
+### HTML Tags and Attributes
+
+* Value of Attributes can be written inside " " or ' ' or No Quote.
+* <form> tag is used to collect data from user.
+* <input> tag is used to collect input form user.
+* Type Attribute from <input> tag, where its default Value is "text" and further we can change it accordingly to our usage.
+* <select> tag/element is used to create ComboBox.
+* <option> tag/element provides various options; It has Value and Text; By default Value and Text are Same.
+
+### Query String
+
+* URL of Function ? queryString
+* User's Data, Client's Data, Browser's Data.
+* This Data is Given to Server Side Function
+
+#### Example Query String
+
+http://127.0.0.1:5500/processData
+? userName=Chaitanya
+& passWord=123456
+& mobileNo=9876543210
+& emailId=xyz%40gmail.com
+& gender=male&java=java
+& date=2024-09-20
+& submit=Submit
+
+## 23-09-2024 Monday
+----------------------
+
+### HTML Tags
+
+* <pre> Tag is used to Preserve or Display the Data as it is without any new formatting.
+* <pre> Tag forces browser to preserve formatting.
+* Comments in HTML are given using <!-- Comment -->
+* <div> Tag is used to group different HTML elements together.
+* <nav> Navigation Tag is used
+
+
+First CLick change 
+second click dom
+third click dom backgroudn change
+fourth click back to first click

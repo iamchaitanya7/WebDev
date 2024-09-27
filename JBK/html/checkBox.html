@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CheckBox Example</title>
+    <style>
+        label{
+            margin-top: 20px;
+            font-size: 18px;
+            font-family: Verdana;
+            color: rgb(30, 113, 255);
+        }
+        input{
+            font-family: Verdana;
+            align-items: center;
+        }
+        form{
+            margin: 10px;
+            margin-top: 40px;
+            background-color:rgb(255, 253, 210);
+            width:max-content;
+            padding: 40px;
+            border-radius: 20px;
+        }
+        #male{
+            color: darkorange;
+        }
+        #female{
+            color: blue;
+        }
+        #City{
+            font-size: 18px;
+            font-family: Verdana;
+            color: rgb(30, 113, 255);
+        }
+        #Submit{
+            font-family: Verdana;
+            background-color:greenyellow;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form action="submitted.html">
+
+        <label>Basic Form Usage</label> <br><br>
+        <input placeholder="Enter Username" name="userName" ><br><br>
+        <input placeholder="Enter Password" name="passWord" type="password" ><br><br>
+        <input placeholder="Enter Mobile No" name="mobileNo" type="tel"><br><br>
+        <input placeholder="Enter Email Id" name="emailId" type="email"><br><br>
+
+        <!--Below is Specifiying the Unqiue Colors to the Individuals Text of the Radio Buttons using Style Tag and Not Style Attribute-->
+        <input name="gender" type="radio" value="male"> <span id="male"> Male </span> 
+        <input name="gender" type="radio" value="female"><span id="female">  Female </span>
+        <br><br>
+
+        <label id="City"> Select City: </label>
+        <select>
+            <option> Pune </option>
+            <option value="Mumbai"> Mumbai </option>
+            <option> Ahmednagar </option>
+        </select>
+        <br><br>
+
+        <!--Creating CheckBoxes using Input tag within which Type as CheckBox and also using its various attributes -->
+        <label>Select Languages: </label>
+        <br><br>
+        <input name="python" type="checkbox" value="python"> <span id="python"> Python </span> 
+        <br><br>
+        <input name="java" type="checkbox" value="java"><span id="java">  Java </span>
+        <br><br>
+        <input name="html" type="checkbox" value="html"><span id="html">  HTML </span>
+        <br><br>
+
+        <!--Creating Date using Input tag within which Type as Date and also using its various attributes -->
+        <label>Select Date: </label>
+        <input name="date" type="date" value="date">
+        <br><br>
+
+        <!--Creating Submit Button using Input tag within which Type as Button and also using its various attributes -->
+        <input id="Submit" name="submit" type="submit" value="Submit">
+
+
+        <!--
+        <span id="date"> Select Date: </span> <input name="html" type="date" value="date">
+        -->
+
+    </form>
+    
+    
+</body>
+</html>

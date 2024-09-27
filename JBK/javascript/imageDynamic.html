@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Image Changing Using Javascript</title>
+
+    <script>
+        var imageNames = ["tatya.jpg", "img1.png", "img2.png"];
+        var index = 0;
+
+        function changeImage(){
+            var image = document.getElementById("i1");
+            index = index + 1;
+            if (index == imageNames.length) {
+                index = 0;
+            }
+            image.src = "images\\" + imageNames[index];
+        }
+        setInterval(changeImage, 2000);
+    </script>
+
+</head>
+<body>
+    <img id="i1" src="images\pngegg.png" width="300px" height="300px">
+</body>
+</html>
+
+
+

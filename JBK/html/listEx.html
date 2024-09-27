@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customised List</title>
+    <style>
+        ul{
+            list-style: none;
+        }
+        ul li::before{
+            content: "\26A1";
+        }
+        h1{
+            width: max-content;
+            margin:auto;
+            background-color: yellow;
+        }
+        h1 span{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1 align = "center"> Hello World...! </h1>
+    <br>
+    <h1 id="hello" align = "center"> <span>Good Evening...!</span></h1>
+    <br>
+    <span>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, perferendis.
+    </span>
+    <br>
+
+    <marquee behavior="alternate" scrollamount=30 direction="right"> Running Text...! </marquee>
+    <marquee behavior="alternate" scrollamount=30 direction="up" height="200px"> Running Text...! </marquee>
+    
+
+    <ol>
+        <li>Hi</li>
+        <li>Hello</li>
+        <li>Good</li>
+        <li>Morning</li>
+        <li>Night</li>
+    </ol>
+
+    <ul>
+        <li>Mango</li>
+        <li>Apple</li>
+        <li>Grapes</li>
+        <li>Kiwi</li>
+        <li>Melon</li>
+    </ul>
+    <!-- FOr individual list elements add id to specific unicode -->
+</body>
+</html>
