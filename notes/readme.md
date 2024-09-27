@@ -117,7 +117,7 @@ alert (i === 10);
 
 
 ----------------------
-## 26-09-2024 Wednesday
+## 26-09-2024 Thursday
 
 ### Javascript
 
@@ -132,3 +132,19 @@ alert (i === 10);
 6. Undefined
 ```
 * `DOM Manipulation`
+
+----------------------
+## 27-09-2024 Friday
+
+### Javascript and DOM Manipulation
+
+* Types of Loop in Javascript:
+```
+1. For Loop.
+2. For-In Loop. (var in arrayName) 
+    {} returns index of elements/values of Array
+3. For-Of Loop. (var of arrayName) 
+    {} returns values of Array.
+4. For-Each Loop.
+5. For-Await-Of Loop
+```
