@@ -153,3 +153,5 @@ alert (i === 10);
 ## 30-09-2024 Monday
 
 ### Javascript and DOM Manipulation
+
+* Dialog Box using Javascript
