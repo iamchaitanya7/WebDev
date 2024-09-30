@@ -1,0 +1,45 @@
+/* Use a more minimalistic design with modern typography */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    overflow: hidden;
+    background-color: #f4f4f9; /* Soft light background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif; /* Modern and minimal font */
+}
+
+#canvas {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #010100;
+}
+
+/* Style for the "No Signal" text */
+.no-signal {
+    position: absolute;
+    font-size: 30px;
+    font-weight: 500;
+    color: #ff3b3b;  /* Light red for modern feel */
+    background-color: #ffffff; /* White background for contrast */
+    padding: 15px 30px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);  /* Soft shadow */
+    border-radius: 12px; /* Rounded edges for modern feel */
+    border: 2px solid #ff3b3b;  /* Red border matching text */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Soft outer shadow */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition on hover */
+    user-select: none;
+}
+
+.no-signal:hover {
+    background-color:red;  /* Inverse hover effect */
+    color: #ffffff;             /* White text on hover */
+}
