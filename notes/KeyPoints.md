@@ -148,3 +148,8 @@ alert (i === 10);
 4. For-Each Loop.
 5. For-Await-Of Loop
 ```
+
+----------------------
+## 30-09-2024 Monday
+
+### Javascript and DOM Manipulation
