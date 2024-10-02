@@ -1,0 +1,239 @@
+/* Importing Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #2c3e50, #4ca1af);
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+} */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(-45deg, #ee7752, #dee950, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.login_box {
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(100px);
+    opacity: 0;
+    animation: slideIn 1s forwards;
+}
+
+@keyframes slideIn {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.login-header span {
+    display: block;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.login-header span::after {
+    content: '';
+    width: 50px;
+    height: 4px;
+    background-color: #2facbf;
+    display: block;
+    margin: 8px auto 0;
+    border-radius: 2px;
+    animation: animate 2s infinite;
+}
+
+@keyframes animate {
+    0% {
+        width: 50px;
+    }
+    50% {
+        width: 70px;
+    }
+    100% {
+        width: 50px;
+    }
+}
+
+.input_box {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.input_box input {
+    width: 100%;
+    padding: 15px 45px;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    background-color: #f4f4f4;
+    outline: none;
+}
+
+.input_box input:focus {
+    border-color: #4ca1af;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(76, 161, 175, 0.3);
+}
+
+.input_box i {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #4ca1af;
+}
+
+/* Check Buttons */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    background: linear-gradient(135deg, #3498db, #4ca1af);
+    color: white;
+    cursor: pointer;
+    margin: 10px 0;
+    outline: none;
+    transition: background 0.4s, box-shadow 0.3s, transform 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #2c3e50, #8e44ad);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300%;
+    height: 300%;
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.4), transparent);
+    transition: all 0.6s;
+    transform: translateX(-50%) translateY(-50%) scale(0);
+    z-index: 1;
+}
+
+button:hover::before {
+    transform: translateX(50%) translateY(50%) scale(1);
+    opacity: 0.6;
+}
+
+/* Login Button */
+.input-submit {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    background: linear-gradient(135deg, #3498db, #8e44ad);
+    color: white;
+    cursor: pointer;
+    transition: background 0.4s, box-shadow 0.3s, transform 0.3s;
+    letter-spacing: 1px;
+}
+
+.input-submit:hover {
+    background: linear-gradient(135deg, #2c3e50, #8e44ad);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #555;
+	margin-bottom: 20px;
+}
+
+.remember-forgot .forgot a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.remember-forgot .forgot a:hover {
+    color: #8e44ad;
+}
+
+.remember-me input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+#emailMsg, #mobileMsg, #passwordMsg {
+    color: #e74c3c;
+    font-size: 0.85rem;
+	display: block;
+	margin-left: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+    .login_box {
+        padding: 20px;
+    }
+
+    .login-header span {
+        font-size: 1.5rem;
+    }
+
+    .input-field {
+        padding: 12px;
+    }
+
+    input[type="button"], .input-submit, button {
+        padding: 12px;
+    }
+}
