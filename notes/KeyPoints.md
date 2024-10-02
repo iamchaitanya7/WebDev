@@ -26,7 +26,7 @@
 
 #### Example Query String
 
-```
+```javascript
 http://127.0.0.1:5500/processData
 ? userName=Chaitanya
 & passWord=123456
@@ -68,21 +68,22 @@ http://127.0.0.1:5500/processData
 * Variables in the Javascript doesnt require defination of its datatypes.
 * Variables in Javascript are declared using the `var` keyword.
 * Example of declaring the `variables` in Javascript :
-```
+```javascript
 var a = 10;
 var b = 99.99;
 var str = "Hello";
 ```
 * Functions in Javascript are declared using the `function` keyword.
 * Example of declaring the `function` in Javascript :
-```
+``` javascript
 function display(){
     //Executable Code;
 }
 ```
 * Javascript code is written inside the `<script>` tag in the document.
 * Example a Basic Javascript program.
-```
+
+```javascript
 <!-- Declaring a Basic Display Function in JavaScript -->
 <script>
     function display(){
@@ -98,7 +99,7 @@ function display(){
 
 * `===` Operator Checks the Type and Value both, of the specified variable.
 * `==` Operator Checks Only the value of the specified variable.
-```
+```javascript
 var i = 10;
 alert (i == 10); 
 //returns true is only if the value of variable matches.
@@ -123,7 +124,8 @@ alert (i === 10);
 
 * `Variables` in Javascript can be declared using `var, let, cosnt`.
 * `DataTypes` in Javascript are as follows:
-```
+
+```javascript
 1. Number
 2. String
 3. Object
@@ -139,7 +141,8 @@ alert (i === 10);
 ### Javascript and DOM Manipulation
 
 * Types of Loop in Javascript:
-```
+
+```javascript
 1. For Loop.
 2. For-In Loop. (var in arrayName) 
     {} returns index of elements/values of Array
@@ -160,3 +163,47 @@ alert (i === 10);
 ----------------------
 ## 01-10-2024 Tuesday
 ### Javascript and DOM Manipulation
+
+#### Variables and Data Types
+* Variables in Javascript can be declared using `var, let, const`
+* Data Types in Javascript:
+	1. Number
+	2. String
+	3. Object
+	4. Boolean
+	5. Array
+	6. Undefined
+
+#### Functions
+* Functions in Javascript are declared using the `function` keyword
+* Example of declaring a function in Javascript:
+```javascript
+function display(){
+    //Executable Code;
+}
+```
+
+#### Operators
+* `===` Operator Checks the Type and Value both, of the specified variable
+* `==` Operator Checks Only the value of the specified variable
+
+#### Loops
+* Types of Loop in Javascript:
+	1. For Loop
+	2. For-In Loop. (var in arrayName) 
+		* returns index of elements/values of Array
+	3. For-Of Loop. (var of arrayName) 
+		* returns values of Array
+	4. For-Each Loop
+	5. For-Await-Of Loop
+
+#### DOM Manipulation
+* DOM Manipulation in Javascript
+
+#### Dialog Box and Form Validation
+* Dialog Box using Javascript
+* Form Validation using Javascript
+
+----------------------
+## 03-10-2024 Thursday
+### Javascript and DOM Manipulation :
