@@ -154,4 +154,9 @@ alert (i === 10);
 
 ### Javascript and DOM Manipulation
 
-* Dialog Box using Javascript
+* Dialog Box using Javascript.
+* Form Validation using Javascript.
+
+----------------------
+## 01-10-2024 Tuesday
+### Javascript and DOM Manipulation
