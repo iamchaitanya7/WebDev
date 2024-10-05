@@ -207,3 +207,25 @@ function display(){
 ----------------------
 ## 03-10-2024 Thursday
 ### Javascript and DOM Manipulation :
+
+## 03-10-2024 Thursday
+### Javascript and DOM Manipulation :
+
+* DOM Manipulation in Javascript
+* DOM Events in Javascript
+* DOM Events Types in Javascript:
+	1. Mouse Events
+	2. Keyboard Events
+	3. Touch Events
+	4. Focus Events
+	5. Form Events
+	6. Clipboard Events
+
+## 04-10-2024 Friday
+### Javascript and DOM Manipulation :
+
+* DOM Events Handling in Javascript
+* Event Listeners in Javascript
+* Event Bubbling and Capturing in Javascript
+* Preventing Default Behaviour in Javascript
+* Stopping Event Propagation in Javascript
