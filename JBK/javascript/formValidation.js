@@ -24,7 +24,7 @@ function checkMobile() {
         mMsg.innerHTML = "Mobile Number is Correct"
         mMsg.style.color = "blue"
         return true
-    } else {
+    } else { 
         mMsg.innerHTML = "Mobile Number is Incorrect"
         mMsg.style.color = "red"
         return false
