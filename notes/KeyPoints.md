@@ -229,3 +229,7 @@ function display(){
 * Event Bubbling and Capturing in Javascript
 * Preventing Default Behaviour in Javascript
 * Stopping Event Propagation in Javascript
+
+## 07-10-2024 Monday
+### MySQL Installation and Usage :
+* SQL is `Not Case Sensitive` language but its a `Syntax Sensitive` language.
