@@ -7,3 +7,10 @@ for (frt of fruits) {
     h.innerHTML += frt
     //h.innerHTML = "Fruits List: " + fruits.join(", ")
 }
+
+
+// let ab = 32
+// while(ab<40){
+//     ab += 6
+// }
+// console.log(ab)
